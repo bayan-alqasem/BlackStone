@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-06T00:03:37 EET" name="Default suite" finished-at="2024-03-06T00:04:34 EET" duration-ms="56993">
+    <groups>
+    </groups>
+    <test started-at="2024-03-06T00:03:37 EET" name="Default test" finished-at="2024-03-06T00:04:34 EET" duration-ms="56993">
+      <class name="TestCases.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.LoginTest@285a4fe3]" started-at="2024-03-06T00:03:37 EET" name="setUp" finished-at="2024-03-06T00:03:37 EET" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logInTest()[pri:1, instance:TestCases.LoginTest@285a4fe3]" started-at="2024-03-06T00:03:37 EET" name="logInTest" finished-at="2024-03-06T00:04:30 EET" duration-ms="52915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInTest -->
+        <test-method signature="homePageTitle()[pri:2, instance:TestCases.LoginTest@285a4fe3]" started-at="2024-03-06T00:04:30 EET" name="homePageTitle" finished-at="2024-03-06T00:04:30 EET" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTitle -->
+        <test-method signature="logOutTest()[pri:3, instance:TestCases.LoginTest@285a4fe3]" started-at="2024-03-06T00:04:30 EET" name="logOutTest" finished-at="2024-03-06T00:04:32 EET" duration-ms="2361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutTest -->
+        <test-method is-config="true" signature="postTesting()[pri:0, instance:TestCases.LoginTest@285a4fe3]" started-at="2024-03-06T00:04:32 EET" name="postTesting" finished-at="2024-03-06T00:04:34 EET" duration-ms="1286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTesting -->
+      </class> <!-- TestCases.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
