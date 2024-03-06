@@ -8,7 +8,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class LoginTest extends Parameter {
+public class MyTestCases extends Parameter {
 
 	@BeforeTest
 	public void setUp() {
