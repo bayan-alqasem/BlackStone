@@ -30,7 +30,7 @@ public class LoginTest extends Parameter {
 		WebElement sginInButton = driver.findElement(By.cssSelector(".block.primary"));
 		sginInButton.click();
 
-		Thread.sleep(50000);
+		Thread.sleep(2000);
 
 		String expectedSuccessfulLoginMessage = "Welcome To Dashboard";
 		String actualSuccessfulLoginMessage = driver
@@ -42,7 +42,7 @@ public class LoginTest extends Parameter {
 	@Test(priority = 2)
 	public void homePageTitle() {
 		String homePageTitle = driver.getTitle();
-		System.out.println(homePageTitle);
+		System.out.println("HomePageTitle-->" + homePageTitle);
 
 	}
 
