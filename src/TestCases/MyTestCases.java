@@ -2,6 +2,8 @@ package TestCases;
 
 import static org.testng.Assert.assertEquals;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
@@ -14,6 +16,7 @@ public class MyTestCases extends Parameter {
 	public void setUp() {
 
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 	}
 
 	@Test(priority = 1)
