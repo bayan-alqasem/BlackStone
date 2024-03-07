@@ -16,11 +16,10 @@ public class MyTestCases extends Parameter {
 	public void setUp() {
 
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 	}
 
 	@Test(priority = 1)
-	public void logInTest() throws InterruptedException {
+	public void logInTest() {
 
 		driver.get(URL);
 
@@ -33,9 +32,10 @@ public class MyTestCases extends Parameter {
 		WebElement sginInButton = driver.findElement(By.cssSelector(".block.primary"));
 		sginInButton.click();
 
-		Thread.sleep(2000);
-
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(9));
+		
 		String expectedSuccessfulLoginMessage = "Welcome To Dashboard";
+
 		String actualSuccessfulLoginMessage = driver
 				.findElement(By.xpath("/html/body/app-root/admin-layout/section/div[3]/dashboard/p")).getText();
 
@@ -67,6 +67,7 @@ public class MyTestCases extends Parameter {
 
 	@AfterTest
 	public void postTesting() throws InterruptedException {
+		
 		Thread.sleep(1000);
 		driver.quit();
 	}
