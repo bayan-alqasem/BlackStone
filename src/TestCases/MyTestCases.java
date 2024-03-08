@@ -32,7 +32,7 @@ public class MyTestCases extends Parameter {
 		WebElement sginInButton = driver.findElement(By.cssSelector(".block.primary"));
 		sginInButton.click();
 
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(9));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		
 		String expectedSuccessfulLoginMessage = "Welcome To Dashboard";
 
